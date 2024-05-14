@@ -3,7 +3,7 @@
 
 
 # Portfolio Bootstrap
-Portfolio realizzato con bootstrap per visualizzazione di vetrina progetti con link ai profili [GitHub](https://github.com/vittorioPiotti) e [CodeSandbox](https://codesandbox.io/u/vittoriopiotti)
+Portfolio realizzato con bootstrap per visualizzazione di vetrina progetti con link alle repository [GitHub](https://github.com/vittorioPiotti) e [CodeSandbox](https://codesandbox.io/u/vittoriopiotti)
 
 
 
