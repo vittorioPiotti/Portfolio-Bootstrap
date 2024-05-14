@@ -9,7 +9,7 @@ Portfolio realizzato con bootstrap per visualizzazione di vetrina progetti con l
 
 ## Sito Web
 
-Sito Web Bingo: [Link al Sito](https://6l2tn4.csb.app/Bingo)
+Sito Web Portfolio: [Link al Sito](https://vittoriopiotti.altervista.org/index.html)
 
 
 
