@@ -1,4 +1,4 @@
-<img src="https://github.com/vittorioPiotti/Portfolio-Bootstrap/blob/main/header.png?raw=true" />
+<img src="https://github.com/vittorioPiotti/Portfolio-Bootstrap/blob/main/header6.png?raw=true" />
 
 
 
@@ -14,4 +14,4 @@ Sito Web Portfolio: [Link al Sito](https://vittoriopiotti.altervista.org/index.h
 
 
 ## Preview
-<img src="https://github.com/vittorioPiotti/Portfolio-Bootstrap/blob/main/Preview.png?raw=true" alt="Icona" />
+<img src="https://github.com/vittorioPiotti/Portfolio-Bootstrap/blob/main/page?raw=true" alt="Icona" />
