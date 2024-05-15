@@ -1,0 +1,119 @@
+
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+
+
+.proj-hover {
+    transition: transform 0.2s ease-in-out; /* Specifica l'animazione di transizione */
+  }
+  
+  .proj-hover:hover {
+    transition: transform 0.2s ease-in-out; /* Specifica l'animazione di transizione */
+  
+    transform: scale(0.9); /* Rimpicciolisci l'elemento al passaggio del mouse */
+  }
+  
+  
+  .proj-clicked {
+    transition: transform 0.2s ease-in-out; /* Specifica l'animazione di transizione */
+  
+    transform: scale(0); /* Rendi l'elemento invisibile */
+  }
+  
+  
+  
+  .proj-load{
+    transition: transform 0.2s ease-in-out; /* Specifica l'animazione di transizione */
+    transform: scale(0); /* Rendi l'elemento invisibile */
+  
+  
+  }
+  .main-proj{
+    transition: transform 0.2s ease-in-out; /* Specifica l'animazione di transizione */
+    transform: scale(1); /* Rimpicciolisci l'elemento al passaggio del mouse */
+  
+  
+    
+  }
+  
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js{
+    width: 100%;
+    height:100%;
+  
+  }
+  
+  #blue-particles-js{
+    width: 100%;
+    height:100%;
+    background-color: #93d2f6;
+  }
+  
+  #green-particles-js{
+    width: 100%;
+    height:100%;
+    background-color: #ccfda6;
+  }
+  
+  #pink-particles-js{
+    width: 100%;
+    height:100%;
+    background-color: #f09092;
+  }
+  
+  
+  #yellow-particles-js{
+    width: 100%;
+    height:100%;
+    background-color: #f7f8a7;
+  }
+  
+  #light-particles-js{
+    width: 100%;
+    height:100%;
+    background-color: #f8f9fa;
+  }
+  
+        body {
+          font-family: Space Grotesk;
+          font-optical-sizing: auto;
+          font-style: normal;
+        }
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+        .bg-green {
+          background-color: #ccfda6;
+        }
+        .bg-yellow {
+          background-color: #f7f8a7;
+        }
+        .bg-pink {
+          background-color: #f09092;
+        }
+        .bg-blue {
+          background-color: #93d2f6;
+        }
+        .bg-white{
+          background-color: white;
+  
+        }
+     
