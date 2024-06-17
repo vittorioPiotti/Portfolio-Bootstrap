@@ -1,0 +1,163 @@
+:root {
+    --border-default-color: #d0d7de;
+}
+
+body{
+    font-size: 14px;
+}
+#left-content {
+    padding: 1rem; /* Adjust padding as needed */
+}
+.brand-nav{
+    color:rgba(0,0,0,.9);
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    transform: scale(0); /* Parte con scala zero */
+    animation: fadeInScale 0.4s forwards; /* Durata e nome dell'animazione */
+}
+.brand-nav:hover{
+    color: #fd8c73;
+    text-decoration: none;
+}
+.brand-nav.active{
+    color: #fd8c73;
+    font-weight: 600;
+    text-decoration: none;
+    animation: click-animation 0.4s forwards;
+
+}
+.nav-elem{
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+    padding: 0.5rem 1rem;
+    transform: scale(0); /* Parte con scala zero */
+    animation: fadeInScale 0.4s forwards; /* Durata e nome dell'animazione */
+}
+
+
+@keyframes fadeInScale {
+    from {
+        transform: scale(0); /* Scala iniziale */
+        opacity: 0; /* Opacità iniziale */
+    }
+    to {
+        transform: scale(1); /* Scala finale */
+        opacity: 1; /* Opacità finale */
+    }
+}
+.nav-elem:hover{
+    color: #fd8c73;
+    text-decoration: none;
+}
+
+
+
+.nav-elem.active{
+    color: #fd8c73;
+    font-weight: 600;
+    text-decoration: none;
+    animation: click-animation 0.4s forwards;
+
+}
+
+
+
+
+
+@keyframes click-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+#right-content {
+    overflow: hidden;
+}
+.author{
+    font-family: monospace;
+    font-size: 12px;
+}
+.fs-custom{
+    font-size: 24px;
+}
+.title{
+    font-size: 22px;
+    font-weight: 600;
+}
+.fw-bold{
+    font-weight:600;
+}
+
+.fw-light{
+    font-weight:400;
+}
+.title-card{
+    font-weight:600;
+    font-size: 14px;
+    cursor: pointer;
+}
+.text-card{
+    font-size: 14px;
+}
+.bordered{
+    border-radius: 0.375rem;
+    border: 1px solid var(--border-default-color); /* Border with 1px width, solid style, red color */
+
+}
+.bordered-top{
+    border-top: 1px solid var(--border-default-color); /* Border with 1px width, solid style, red color */
+
+}
+
+.bordered-bottom{
+  
+    border-bottom: 1px solid var(--border-default-color); /* Border with 1px width, solid style, red color */
+
+}
+.rounded-img{
+    border-radius: 0.375rem;
+}
+
+#responsive-image{
+    border: 2px solid var(--border-default-color); /* Border with 1px width, solid style, red color */
+
+}
+.bordered-badge{
+    border-radius: 2em;
+    border: 1px solid var(--border-default-color); /* Border with 1px width, solid style, red color */
+    padding: .12em .5em;
+    color: #636C76;
+    font-size: 14px;
+
+}
+.rounded-custom{
+    border-radius: 0.375rem 0.375rem 0 0;
+
+}
+
+.table th {
+    font-weight: 600;
+    text-align: center; /* Centra il testo orizzontalmente */
+ 
+}
+.table td, .table tr th {
+    border: 1px solid var(--border-default-color);
+    vertical-align: middle; /* Centra il testo verticalmente */
+}
+.table a {
+    text-decoration: underline;
+}
+.table a:hover {
+    text-decoration: underline;
+}
+
