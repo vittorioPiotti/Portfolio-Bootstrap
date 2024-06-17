@@ -1,4 +1,3 @@
-<img src="https://github.com/vittorioPiotti/Portfolio-Bootstrap/blob/main/header6.png?raw=true" />
 
 
 
