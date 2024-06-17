@@ -1,3 +1,24 @@
+/*
+  Portfolio-Bootstrap v1.0.0 (https://github.com/vittorioPiotti/Portfolio-Bootstrap/releases/tag/1.0.0)
+  Copyright 2024 Vittorio Piotti
+  Licensed under GPL-3.0 (https://github.com/vittorioPiotti/Portfolio-Bootstrap/blob/main/LICENSE.md)
+*/
+
+/*
+ Bootstrap v4.5.2 (https://getbootstrap.com/)
+ Copyright 2011-2020 The Bootstrap Authors
+ Copyright 2011-2020 Twitter, Inc.
+ Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+*/
+
+/*
+ jQuery v3.5.1  (https://jquery.com/download/)
+ (c) JS Foundation and other contributors
+ jquery.org/license Licensed under MIT (https://github.com/jquery/jquery/blob/main/LICENSE.txt)
+*/
+
+
+                                        
 $(document).ready(function() {
     $(document).ready(function() {
         $('#About-Me').click(function() {
