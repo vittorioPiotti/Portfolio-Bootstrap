@@ -78,7 +78,7 @@ $(document).ready(function() {
     
     $(document).ready(function() {
        // Seleziona tutti gli elementi della nav con la classe "nav-elem"
-    $('.nav-elem').on('click', function() {
+    $('.nav-elem, #About-Me').on('click', function() {
         var navbarToggler = $('.navbar-toggler');
         if (navbarToggler.attr('aria-expanded') === 'true') {
             setTimeout(function() {
