@@ -16,6 +16,11 @@ Sito Web Portfolio: [Link al Sito](https://vittoriopiotti.altervista.org/index.h
 ## Preview
 <img src="https://github.com/vittorioPiotti/Portfolio-Bootstrap/blob/main/socialpreview.png?raw=true" alt="Icona" />
 
+## Ispirazione
+
+Il Portfolio è stato **sviluppato indipendentemente** ed è stato ispirato dal Design di [GitHub](https://github.com/)
+
+
 
 ## Licenze
 
