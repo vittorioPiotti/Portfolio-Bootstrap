@@ -18,7 +18,7 @@ Sito Web Portfolio: [Link al Sito](https://vittoriopiotti.altervista.org/index.h
 
 ## Ispirazione
 
-Il Portfolio è stato **sviluppato indipendentemente** ed è stato ispirato dal Design di [GitHub](https://github.com/)
+Il Portfolio è stato ispirato dal Design di [GitHub](https://github.com/) 
 
 
 
