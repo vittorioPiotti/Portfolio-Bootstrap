@@ -1,3 +1,5 @@
+
+
 <!--
   Portfolio-Bootstrap v1.0.0 (https://github.com/vittorioPiotti/Portfolio-Bootstrap/releases/tag/1.0.0)
   Copyright 2024 Vittorio Piotti
@@ -17,6 +19,28 @@
  jquery.org/license Licensed under MIT (https://github.com/jquery/jquery/blob/main/LICENSE.txt)
 -->
 
+<!--
+  Skipped minification because the original files appears to be already minified.
+  Original file: /npm/chart.js@4.4.4/dist/chart.umd.js
+
+  Do NOT use SRI with dynamically generated files! More information:
+  https://www.jsdelivr.com/using-sri-with-dynamic-files
+-->
+
+<!--
+  Chart.js v4.4.4
+  https://www.chartjs.org
+  (c) 2024 Chart.js Contributors
+  Released under the MIT License
+-->
+
+<!--
+  @kurkle/color v0.3.2
+  https://github.com/kurkle/color#readme
+  (c) 2023 Jukka Kurkela
+  Released under the MIT License
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +58,7 @@
     <meta property="og:image:height" content="640">
 </head>
 <body id="About-Me-Ref">
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top bordered-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top bordered-bottom">
         <a class="brand-nav" id="About-Me" href="#About-Me-Ref">About Me</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -44,7 +68,11 @@
           <ul class="navbar-nav mr-auto">
         
             <li class="nav-item">
-              <a class="nav-elem" href="#Software-Didattici">Software Didattici</a>
+              <a class="nav-elem" href="#Software">Softwares </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-elem" href="#Siti-Logica">Siti Logica</a>
             </li>
             <li class="nav-item">
                 <a class="nav-elem" href="#App">App </a>
@@ -53,13 +81,20 @@
                 <a class="nav-elem" href="#Siti-Web">Siti Web</a>
               </li>
               <li class="nav-item">
-                <a class="nav-elem" href="#Giochi-Online">Giochi Online</a>
+                <a class="nav-elem" href="#Giochi-Online">Online Game</a>
               </li>
               <li class="nav-item">
-                <a class="nav-elem" href="#Giochi-Offline">Giochi Offline</a>
+                <a class="nav-elem" href="#Giochi-Offline">Offline Game</a>
               </li>
               <li class="nav-item">
                 <a class="nav-elem" href="#Algoritmi">Algoritmi</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-elem" href="#Servers">Servers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-elem" href="#Contact-Me">Contact Me</a>
               </li>
          
          
@@ -91,20 +126,63 @@
 
                 </div>
             </div>
-                <p id="status-space" class="d-block p-0 mt-3 mb-4" style="width:70%">Appassionato di sviluppo web di siti e app</p>
-
+<p id="status-space" class="d-block p-0 mt-3 m-0" style="width: 100%; text-align: left; margin-left: 1rem">
+                    <span> Appassionato di sviluppo web di siti e app </span><br><span style="line-height: 3;     display: flex;">
+                      <span style="display:flex;justify-content:center;align-items:center;"><span style="display:flex;justify-content:center;align-items:center;height:23px;width:60px;background-color: rgb(248,249,250);border-radius:5px;font-weight:500;"> Github:</span><a href="https://github.com/vittorioPiotti" style=" display: flex;"><span style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: flex-start;
+                          width: 24px;
+                        "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="padding-top: 5px" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                          <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"></path>
+                          <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"></path>
+                        </svg>
+                      </span>
+                      vittorioPiotti
+</a>
+                    </span>
+                  </span></p>
                 
             </div>
             
             <div id="right-content" class="col-12 col-md">
                 
                 <div class="bordered pt-4  px-1">
-                <p class="author">vittorioPiotti.altervista.org/</p>
+                <p class="author">Overview of my projects and skills</p>
 
                 <p class="title">Hi there 👋</p>
                 <hr>
-                <p >I'm freelance developer 🧑🏻‍💻</p>
-                <p class="title">Migliori Progetti ⭐</p>
+                <p >I'm open source developer 🧑🏻‍💻</p>
+                <div style="position: relative;width:300px;height:160px;margin-bottom: 20px;">
+                    <div style="position:absolute;width: 300px; margin-left: 10px;top:-70px;">
+                        <canvas id="myPieChart" ></canvas>
+                        <div id="legend" style="flex: 0 0 200px;"></div>
+                    </div>
+                </div>
+                <p class="title">Masterpiece 🔥</p>
+                <div class="mb-2 mx-3">
+                    <div class="table-responsive " >
+                    <table class="table " style="max-width:855px;">
+                      
+                        <tbody class=>
+                            <tr>
+                                <td><a href="#"><img src="https://github.com/vittorioPiotti/Music-Player/blob/main/media/socialpreview-second.png?raw=true" style="max-width: 100%;"></a></td>
+                        
+                            
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/vittorioPiotti/Music-Player">Music Player</a></td>
+                               
+                             
+                            </tr>
+                     
+                        </tbody>
+                   </table>
+                    </div>
+                </div>
+                
+
+                <p class="title">Best Repositories ⭐</p>
                 <div class="mb-2 mx-3">
                     <div class="table-responsive " >
                     <table class="table " style="max-width:855px;">
@@ -141,6 +219,7 @@
                                 <td><img src="https://github.com/vittorioPiotti/vittorioPiotti/raw/main/immagini/figma.png" width="70" style="max-width: 100%;"></td>
                                 <td><img src="https://github.com/vittorioPiotti/vittorioPiotti/raw/main/immagini/html.png" width="70" style="max-width: 100%;"></td>
                                 <td><img src="https://github.com/vittorioPiotti/vittorioPiotti/raw/main/immagini/js.png" width="70" style="max-width: 100%;"></td>
+                                <td><img src="https://github.com/vittorioPiotti/vittorioPiotti/raw/main/immagini/csh.png" width="70" style="max-width: 100%;"></td>
                             </tr>
                             <tr>
                                 <td><img src="https://github.com/vittorioPiotti/vittorioPiotti/raw/main/immagini/php.png" width="70" style="max-width: 100%;"></td>
@@ -149,50 +228,72 @@
                                 <td><img src="https://github.com/vittorioPiotti/vittorioPiotti/raw/main/immagini/sql.png" width="70" style="max-width: 100%;"></td>
                                 <td><img src="https://github.com/vittorioPiotti/vittorioPiotti/raw/main/immagini/ts.png" width="70" style="max-width: 100%;"></td>
                                 <td><img src="https://github.com/vittorioPiotti/vittorioPiotti/raw/main/immagini/xcode.png" width="70" style="max-width: 100%;"></td>
+                                <td><img src="https://github.com/vittorioPiotti/vittorioPiotti/raw/main/immagini/java.png" width="70" style="max-width: 100%;"></td>
+
                             </tr>
                      
                         </tbody>
                    </table>
                     </div>
                 </div>
-                <p class="title">Progetti 💡</p>
+                <p class="title">Repositories 🛠️</p>
                 <div class=" mb-2 mx-3">
                 <div class="table-responsive " >
                 <table class="table  "style="max-width:855px;">
                     <thead>
                         <tr>
-                            <th>Giochi Online</th>
-                            <th>Giochi Offline</th>
-                            <th>Software didattici</th>
+                            <th>Online Game</th>
+                            <th>Offline Game</th>
+                            <th>Softwares</th>
+                            <th>Siti Logica</th>
                             <th>App</th>
                             <th>Siti Web</th>
                             <th>Algoritmi</th>
+                            <th>Servers</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="https://github.com/vittorioPiotti/FilaTre-Online">FilaTre</a></td>
-                            <td><a href="https://github.com/vittorioPiotti/Bingo-Bootstrap">Bingo</a></td>
-                            <td><a href="https://github.com/vittorioPiotti/Dijkstra-Bootstrap">Dijkstra</a></td>
-                            <td><a href="https://github.com/vittorioPiotti/Gestione-Hotel-App">Gestione Hotels</a></td>
-                            <td><a href="https://github.com/vittorioPiotti/Gestione-Hotel-PHP">Gestione Hotels</a></td>
+                            <td><a href="https://github.com/vittorioPiotti/FilaTre-Online">FilaTre Online</a></td>
+                            <td><a href="https://github.com/vittorioPiotti/Bingo-Bootstrap">Bingo Offline</a></td>
+                            <td><a href="https://github.com/vittorioPiotti/Subnetting-Java">Subnetting Java</a></td>
+                            <td><a href="https://github.com/vittorioPiotti/Dijkstra-Bootstrap">Dijkstra Web</a></td>
+                            <td><a href="https://github.com/vittorioPiotti/Gestione-Hotel-App">Gestione Hotels App</a></td>
+                            <td><a href="https://github.com/vittorioPiotti/Gestione-Hotel-PHP">Gestione Hotels Web</a></td>
                             <td><a href="https://github.com/vittorioPiotti/Battaglia-Navale-C">Battaglia Navale</a></td>
+                            <td><a href="https://github.com/vittorioPiotti/Gestione-Hotels-Server">Gestione Hotels Server</a></td>
+
+                            
                         </tr>
                         <tr>
-                            <td><a href="https://github.com/vittorioPiotti/Bingo-Online-Bootstrap">Bingo</a></td>
+                            <td><a href="https://github.com/vittorioPiotti/Bingo-Online-Bootstrap">Bingo Online</a></td>
                             <td></td>
                             <td><a href="https://github.com/vittorioPiotti/Primary-Flight-Display">PFD</a></td>
+                            <td><a href="https://github.com/vittorioPiotti/Subnetting-Bootstrap">Subnetting Web</a></td>
                             <td><a href="https://github.com/vittorioPiotti/Calendario-React-Native">Calendario</a></td>
                             <td><a href="https://github.com/vittorioPiotti/Gestionale">Gestionale</a></td>
                             <td><a href="https://github.com/vittorioPiotti/Matrix-Calculator-C">Matrix Calculator</a></td>
+                            <td><a href="https://github.com/vittorioPiotti/Music-Player-Server">Music Player Server</a></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><a href="https://github.com/vittorioPiotti/Fermat-And-RSA">Fermat and RSA</a></td>
+                            <td></td>
+                            <td><a href="https://github.com/vittorioPiotti/Calcolatrice-React-Native">Calcolatrice</a></td>
+                            <td><a href="https://github.com/vittorioPiotti/Portfolio-Bootstrap">Portfolio</a></td>
+                            <td><a href="https://github.com/vittorioPiotti/Algoritmo-Dijkstra-C">Dijkstra C</a></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><a href="https://github.com/vittorioPiotti/Calcolatrice-React-Native">Calcolatrice</a></td>
-                            <td><a href="https://github.com/vittorioPiotti/Portfolio-Bootstrap">Portfolio</a></td>
-                            <td><a href="https://github.com/vittorioPiotti/Algoritmo-Dijkstra-C">Dijkstra</a></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="https://github.com/vittorioPiotti/Music-Player">Music Player</a></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                     </tbody>
                </table>
@@ -208,29 +309,18 @@
      
           
         <div class="mt-5 position-relative" >
-            <div style="background-color: transparent;position: absolute;top:-280px;" id="Software-Didattici"> </div>
-        <p class="m-0 title" >Software Didattici</p>
+            <div style="background-color: transparent;position: absolute;top:-280px;" id="Software"> </div>
+        <p class="m-0 title" >Softwares </p>
         <div class="row  mt-3">
 
+           
 
-            <div class="col-sm-12 col-md-6 col-lg-6 mb-1 ">
-              <div class="mb-4 bordered">
-                <img src="https://github.com/vittorioPiotti/Dijkstra-Bootstrap/blob/main/socialpreview.png?raw=true" class="card-img rounded-custom" alt="...">
-                <div class="card-body bordered-top">
-                  <a class="title-card m-0">Dijkstra Bootstrap</a> 
-                  <p class="text-card my-2 m-0">Sito web che offre un'interfaccia user friendly per sviluppare esercizi sull'algoritmo di Dijkstra con visualizzazione di tutti i cammini minimi e archi direzionabili</p>
-                  <p class="m-0">
-                    <span class="d-inline-block mr-1 rounded-circle" style="background-color: #f1e05a; width: 14px; height: 14px;"></span>
-                    <span itemprop="programmingLanguage">JavaScript</span>
-                  </p>
-                </div>
-              </div>
-            </div>
+
         
             
-            <div class="col-sm-12 col-md-6 col-lg-6 mb-1 ">
-              <div class="mb-4 bordered">
-                <img src="https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/screenshots/socialpreview.png?raw=true" class="card-img rounded-custom" alt="...">
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-1 ">
+                <div class="mb-4 bordered">
+                <img src="https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/screenshots/socialpreview5.png?raw=true" class="card-img rounded-custom" alt="...">
                 <div class="card-body bordered-top">
                   <a class="title-card m-0" href="https://github.com/vittorioPiotti/Primary-Flight-Display">Primary Flight Display</a> 
                   <p class="text-card my-2 m-0">Soluzione software Primary Flight Display
@@ -241,7 +331,38 @@
                   </p>
                 </div>
               </div>
-            </div>   
+            </div> 
+            
+            
+             <div class="col-sm-12 col-md-6 col-lg-4 mb-1 ">
+                  <div class="mb-4 bordered">
+                  <img src="https://github.com/vittorioPiotti/Subnet-Solver-Java/blob/main/screenshots/vlsm.png?raw=true" class="card-img rounded-custom" alt="...">
+                  <div class="card-body bordered-top">
+                    <a class="title-card m-0" href="https://github.com/vittorioPiotti/Subnet-Solver-Java">Subnetting Java</a> 
+                    <p class="text-card my-2 m-0">Soluzione software per la risoluzione degli esercizi sulle reti. Identifica il tipo di IP, verifica se due IP sono della stessa rete, effettua la FLSM e la VLSM</p>
+                    <p class="m-0">
+                      <span class="d-inline-block mr-1 rounded-circle" style="background-color: #b07219; width: 14px; height: 14px;"></span>
+                      <span itemprop="programmingLanguage">Java</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-12 col-md-6 col-lg-4 mb-1 ">
+                <div class="mb-4 bordered">
+                <img src="https://github.com/vittorioPiotti/Fermat-And-RSA/blob/main/images/socialpreview2.png?raw=true" class="card-img rounded-custom" alt="...">
+                <div class="card-body bordered-top">
+                  <a class="title-card m-0" href="https://github.com/vittorioPiotti/Fermat-And-RSA">Fermat and RSA</a> 
+                  <p class="text-card my-2 m-0">Soluzione software in Java che genera e salva su file i numeri primi con algoritmo di Fermat e algoritmo di crittografia RSA</p>
+                  <p class="m-0">
+                    <span class="d-inline-block mr-1 rounded-circle" style="background-color: #b07219; width: 14px; height: 14px;"></span>
+                    <span itemprop="programmingLanguage">Java</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+              
           </div>
         </div>
 
@@ -249,6 +370,71 @@
 
 
 
+
+
+
+
+
+
+        <div class="mt-5 position-relative" >
+          <div style="background-color: transparent;position: absolute;top:-280px;" id="Siti-Logica"> </div>
+      <p class="m-0 title" >Siti Logica</p>
+      <div class="row  mt-3">
+
+         
+
+
+
+        <div class="col-sm-12 col-md-6 col-lg-6 mb-1 ">
+          <div class="mb-4 bordered">
+            <img src="https://github.com/vittorioPiotti/Subnetting-Bootstrap/blob/main/screenshots/flsm.png?raw=true" class="card-img rounded-custom" alt="...">
+            <div class="card-body bordered-top">
+              <a class="title-card m-0" href="https://github.com/vittorioPiotti/Subnetting-Bootstrap">Subnetting Bootstrap</a> 
+              <p class="text-card my-2 m-0">Sito web per la risoluzione degli esercizi sulle reti. Identifica il tipo di IP, verifica se due IP sono della stessa rete, effettua la FLSM e la VLSM</p>
+              <p class="m-0">
+                <span class="d-inline-block mr-1 rounded-circle" style="background-color: #f1e05a; width: 14px; height: 14px;"></span>
+                <span itemprop="programmingLanguage">JavaScript</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+          <div class="col-sm-12 col-md-6 col-lg-6 mb-1 ">
+            <div class="mb-4 bordered">
+              <img src="https://github.com/vittorioPiotti/Dijkstra-Bootstrap/blob/main/socialpreview.png?raw=true" class="card-img rounded-custom" alt="...">
+              <div class="card-body bordered-top">
+                <a class="title-card m-0" href="https://github.com/vittorioPiotti/Dijkstra-Bootstrap">Dijkstra Bootstrap</a> 
+                <p class="text-card my-2 m-0">Sito web che offre un'interfaccia user friendly per sviluppare esercizi sull'algoritmo di Dijkstra con visualizzazione di tutti i cammini minimi e archi direzionabili</p>
+                <p class="m-0">
+                  <span class="d-inline-block mr-1 rounded-circle" style="background-color: #f1e05a; width: 14px; height: 14px;"></span>
+                  <span itemprop="programmingLanguage">JavaScript</span>
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+     
+            
+        </div>
+      </div>
 
 
 
@@ -304,7 +490,7 @@
 
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-1 ">
                     <div class="mb-4 bordered">
-                      <img src="https://github.com/vittorioPiotti/Calcolatrice-React-Native/blob/main/socialpreview.png?raw=true" class="card-img rounded-custom" alt="...">
+                      <img src="https://github.com/vittorioPiotti/Calcolatrice-React-Native/blob/main/socialpreview2.png?raw=true" class="card-img rounded-custom" alt="...">
                       <div class="card-body bordered-top">
                         <a class="title-card m-0" href="https://github.com/vittorioPiotti/Calcolatrice-React-Native">Calcolatrice</a> 
                         <p class="text-card my-2 m-0">Calcolatrice Mobile con Rotazione Schermo in React-Native senza librerie esterne sul design della calcolatrice di IOS</p>
@@ -335,10 +521,44 @@
                 <p class="m-0 title">Siti Web</p>
                 <div class="row  mt-3">
         
+
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 mb-1 ">
+                        <div class="mb-4 bordered">
+                          <img src="https://github.com/vittorioPiotti/Music-Player/blob/main/media/socialpreview-second.png?raw=true" class="card-img rounded-custom" alt="...">
+                          <div class="card-body bordered-top">
+                            <a class="title-card m-0" href="https://github.com/vittorioPiotti/Music-Player">Music Player</a> 
+                            <p class="text-card my-2 m-0">Sito di riproduzione musicale per ascoltare le canzoni caricate sulla piattaforma.</p>
+                            <p class="m-0">
+                              <span class="d-inline-block mr-1 rounded-circle" style="background-color: #f1e05a; width: 14px; height: 14px;"></span>
+                              <span itemprop="programmingLanguage">JavaScript</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>   
+
         
-                    <div class="col-sm-12 col-md-6 col-lg-4 mb-1 ">
-                      <div class="mb-4 bordered">
-                        <img src="https://github.com/vittorioPiotti/vittorioPiotti/blob/main/immagini/socialpreview.png?raw=true" class="card-img rounded-custom" alt="...">
+                  
+                
+                    
+                    <div class="col-sm-12 col-md-6 col-lg-6 mb-1 ">
+                        <div class="mb-4 bordered">
+                        <img src="https://github.com/vittorioPiotti/Gestione-Hotels-Web/blob/main/socialpreview80.png?raw=true" class="card-img rounded-custom" alt="...">
+                        <div class="card-body bordered-top">
+                          <a class="title-card m-0" href="https://github.com/vittorioPiotti/Gestione-Hotel-PHP">Gestione Hotels Sito</a> 
+                          <p class="text-card my-2 m-0">Sito web per Gestione Hotel con account Cliente per Prenotazioni delle Stanze Hotel e account Admin per gestire il caricamento dei dati su Hotel e Stanze</p>
+                          <p class="m-0">
+                            <span class="d-inline-block mr-1 rounded-circle" style="background-color: #4F5D95; width: 14px; height: 14px;"></span>
+                            <span itemprop="programmingLanguage">PHP</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>  
+                    
+                    
+                      <div class="col-sm-12 col-md-6 col-lg-6 mb-1 ">
+                        <div class="mb-4 bordered">
+                        <img src="https://github.com/vittorioPiotti/vittorioPiotti/blob/main/immagini/socialpreview70.png?raw=true" class="card-img rounded-custom" alt="...">
                         <div class="card-body bordered-top">
                           <a class="title-card m-0" href="https://github.com/vittorioPiotti/Gestionale">Gestionale PCTO</a> 
                           <p class="text-card my-2 m-0">Gestionale online per gestire registrazione e visualizzazione dei clienti di un azienda da account utente aziendali preregistrati</p>
@@ -349,25 +569,11 @@
                         </div>
                       </div>
                     </div>
-                
                     
-                    <div class="col-sm-12 col-md-6 col-lg-4 mb-1 ">
-                      <div class="mb-4 bordered">
-                        <img src="https://github.com/vittorioPiotti/Gestione-Hotel-PHP/blob/main/socialpreview.png?raw=true" class="card-img rounded-custom" alt="...">
-                        <div class="card-body bordered-top">
-                          <a class="title-card m-0" href="https://github.com/vittorioPiotti/Gestione-Hotel-PHP">Gestione Hotels Sito</a> 
-                          <p class="text-card my-2 m-0">Sito web per Gestione Hotel con account Cliente per Prenotazioni delle Stanze Hotel e account Admin per gestire il caricamento dei dati su Hotel e Stanze</p>
-                          <p class="m-0">
-                            <span class="d-inline-block mr-1 rounded-circle" style="background-color: #4F5D95; width: 14px; height: 14px;"></span>
-                            <span itemprop="programmingLanguage">PHP</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>   
     
-                    <div class="col-sm-12 col-md-6 col-lg-4 mb-1 ">
+                    <div class="col-sm-12 col-md-6 col-lg-6 mb-1 ">
                         <div class="mb-4 bordered">
-                          <img src="https://github.com/vittorioPiotti/Portfolio-Bootstrap/blob/main/socialpreview.png?raw=true" class="card-img rounded-custom" alt="...">
+                          <img src="https://raw.githubusercontent.com/vittorioPiotti/Portfolio-Bootstrap/main/socialpreview2.png" class="card-img rounded-custom" alt="...">
                           <div class="card-body bordered-top">
                             <a class="title-card m-0" href="https://github.com/vittorioPiotti/Portfolio-Bootstrap">Portfolio</a> 
                             <p class="text-card my-2 m-0">Portolio per presentazione profilo professionale e vetrina dei progetti realizzati</p>
@@ -378,6 +584,10 @@
                           </div>
                         </div>
                       </div>   
+
+
+
+
                   </div>
                 </div>
         
@@ -395,13 +605,13 @@
 
                 <div class="mt-5 position-relative" >
                     <div style="background-color: transparent;position: absolute;top:-280px;" id="Giochi-Online"> </div>
-                    <p class="title m-0">Giochi Online</p>
+                    <p class="title m-0">Online Game</p>
                     <div class="row  mt-3">
             
             
                         <div class="col-sm-12 col-md-6 col-lg-6 mb-1 ">
                           <div class="mb-4 bordered">
-                            <img src="https://github.com/vittorioPiotti/FilaTre-Online/blob/main/FilaTreOnline/imgs/socialpreview.png?raw=true" class="card-img rounded-custom" alt="...">
+                            <img src="https://github.com/vittorioPiotti/FilaTre-Online/blob/main/FilaTreOnline/imgs/socialpreview3.png?raw=true" class="card-img rounded-custom" alt="...">
                             <div class="card-body bordered-top">
                               <a class="title-card m-0" href="https://github.com/vittorioPiotti/FilaTre-Online">Fila Tre</a> 
                               <p class="text-card my-2 m-0">Fila tre online per partite veloci con gli amici in un'interfaccia grafica accattivante</p>
@@ -416,7 +626,7 @@
                         
                         <div class="col-sm-12 col-md-6 col-lg-6 mb-1 ">
                           <div class="mb-4 bordered">
-                            <img src="https://github.com/vittorioPiotti/Bingo-Online-Bootstrap/blob/main/socialpreview.png?raw=true" class="card-img rounded-custom" alt="...">
+                            <img src="https://github.com/vittorioPiotti/Bingo-Online-Bootstrap/blob/main/socialpreview50.png?raw=true" class="card-img rounded-custom" alt="...">
                             <div class="card-body bordered-top">
                               <a class="title-card m-0" href="https://github.com/vittorioPiotti/Bingo-Online-Bootstrap">Bingo Bootstrap Online</a> 
                               <p class="text-card my-2 m-0">Bingo Multi-Player in cui giocare le Cartelle del Botteghino o le Cartelle del Tabellone</p>
@@ -457,13 +667,13 @@
 
                     <div class="mt-5 position-relative" >
                         <div style="background-color: transparent;position: absolute;top:-280px;" id="Giochi-Offline"> </div>
-            <p class="title m-0">Giochi Offline</p>
+            <p class="title m-0">Offline Game</p>
             <div class="row  mt-3">
     
     
                 <div class="col-sm-12 col-md-8 col-lg-8  mb-1 m-auto ">
                   <div class="mb-4 bordered">
-                    <img src="https://github.com/vittorioPiotti/Bingo-Bootstrap/blob/main/socialpreview.png?raw=true" class="card-img rounded-custom" alt="...">
+                    <img src="https://github.com/vittorioPiotti/Bingo-Bootstrap/blob/main/socialpreview12.png?raw=true" class="card-img rounded-custom" alt="...">
                     <div class="card-body bordered-top">
                       <a class="title-card m-0" href="https://github.com/vittorioPiotti/Bingo-Bootstrap">Bingo Bootrstrap Offline</a> 
                       <p class="text-card my-2 m-0">
@@ -555,13 +765,79 @@
                    
                   </div>
                 </div>
+
+
+
+                <div class="mt-5 position-relative" >
+                    <div style="background-color: transparent;position: absolute;top:-280px;" id="Servers"> </div>
+                    <p class="m-0 title">Servers</p>
+                    <div class="row  mt-3">
+    
+                         <div class="col-sm-12 col-md-6 col-lg-6 mb-1 ">
+                            <div class="mb-4 bordered">
+                              <div class="card-body ">
+                                <a class="title-card m-0" href="https://github.com/vittorioPiotti/Gestione-Hotels-Server">Gestione Hotels Server</a> 
+                                <p class="text-card my-2 m-0">Server del progetto Gestione Hotels utilizzato sia per il Client Web che per il Client dell'Applicazione</p>
+                                <p class="m-0">
+                                    <span class="d-inline-block mr-1 rounded-circle" style="background-color: #4F5D95; width: 14px; height: 14px;"></span>
+                                    <span itemprop="programmingLanguage">PHP</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>   
+            
+                         <div class="col-sm-12 col-md-6 col-lg-6 mb-1 ">
+                          <div class="mb-4 bordered">
+                            <div class="card-body ">
+                              <a class="title-card m-0" href="https://github.com/vittorioPiotti/Music-Player-Server">Music Player Server</a> 
+                              <p class="text-card my-2 m-0">Server del progetto Music Player utilizzato per il Client Web</p>
+                              <p class="m-0">
+                                <span class="d-inline-block mr-1 rounded-circle" style="background-color: #4F5D95; width: 14px; height: 14px;"></span>
+                                <span itemprop="programmingLanguage">PHP</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        
+                       
+        
+                       
+                      </div>
+                    </div>
         
                 
 
 
 
-
-
+                <div class="bordered mt-5 pt-4  px-1 position-relative" >
+                    <div style="background-color: transparent;position: absolute;top:-280px;" id="Contact-Me"> </div>
+                    <p class="author"> Ask me questions or suggestions</p>
+    
+                    <p class="title">Contact me 💬</p>
+                    <hr>
+                   
+                         <div class="p-3" >
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required style="max-width:200px" maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required style="max-width:300px" maxlength="100">
+                        </div>
+                        <div class="form-group">
+                            <label for="object">Object</label>
+                            <input id="object" type="text" class="form-control" id="object" name="object" placeholder="Enter your object" required style="max-width:250px" maxlength="78">
+                        </div>
+                           <div class="form-group">
+                              <label for="message">Message</label>
+                              <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter your message" required style="max-width:400px" maxlength="500"></textarea>
+                          </div>
+                        <button id="send" class="btn btn-primary">Submit</button>
+                    </div>
+                   
+                </div>
 
 
 
@@ -581,7 +857,9 @@
 
     <script src="index/jquery-3.5.1.min.js"></script>
     <script src="index/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="index/scripts.js"></script>
 
 </body>
 </html>
+
