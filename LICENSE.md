@@ -2,7 +2,8 @@
 
 Version 3, 29 June 2007
 
-Copyright (C) 2024 Portfolio author Vittorio Piotti https://vittoriopiotti.altervista.org/
+Copyright (C) 2024 HotelsBookingApp author Vittorio Piotti
+<https://vittoriopiotti.altervista.org/>
 
 Everyone is permitted to copy and distribute verbatim copies of this
 license document, but changing it is not allowed.
