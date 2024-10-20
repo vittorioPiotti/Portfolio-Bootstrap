@@ -43,14 +43,15 @@ Il Portfolio è stato ispirato dal Design di [GitHub](https://github.com/)
 
 ---
 
-### PathGraph
 
+### Bootstrap
 
-**Copyright** 2011-2018 The Bootstrap Authors
+**Copyright** 2011-2018 The Bootstrap Authors 
 
-**Version** [v4.5.2](https://getbootstrap.com/docs/versions/)
+**Version** [v5.2](https://github.com/twbs/bootstrap/releases/tag/v5.2.0)
 
-**License** [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
+**License** [MIT](https://github.com/twbs/bootstrap/blob/main/LICENSE)
+
 
 
 ---
