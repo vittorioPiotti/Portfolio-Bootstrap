@@ -5,10 +5,7 @@
 
 Portolio per presentazione profilo professionale e vetrina dei progetti realizzati
 
-#### Support Me
-
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P012BC8U)
+---
 
 
 ## Sito Web
